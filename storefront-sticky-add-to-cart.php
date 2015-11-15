@@ -26,6 +26,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
  * @since  1.0.0
  * @return object Storefront_Sticky_Add_to_Cart
  */
+ 
+
+if ( ! is_product() ) {
+	
 function Storefront_Sticky_Add_to_Cart() {
 	return Storefront_Sticky_Add_to_Cart::instance();
 } // End Storefront_Sticky_Add_to_Cart()
@@ -300,3 +304,4 @@ final class Storefront_Sticky_Add_to_Cart {
 	}
 
 } // End Class
+}
